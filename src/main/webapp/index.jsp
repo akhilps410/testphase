@@ -1,5 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
 <html>
-<body>
-<h2>Hello World!</h2>
-</body>
+
+  <body>
+<form action="index.jsp">
+  
+        First INPUT:
+
+
+
+        <input name="firstinput" type="text" 
+       value=<%=request.getParameter("firstinput") %>>
+        <br>
+        <input type="submit" value="Submit">
+        <%
+            String first = request.getParameter("firstinput");
+        out.println(first);
+
+        %>
+   
+</form>
+ </body>
 </html>
